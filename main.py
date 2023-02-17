@@ -5,10 +5,12 @@ from gui import GUI
 from generator import Generator
 from gui_custom import Custom
 from surface import convertStrToGrid
+from guide import Guide
 def main_menu():
     menu = Menu()
     gui = None
     custom = None
+    guide = None
     generator = Generator()
     while True:
         menu.loop()
@@ -53,6 +55,13 @@ def main_menu():
                 menu.running = True
                 menu.error_data = True
                 continue
+        if menu.guide:
+            menu.init_btn()
+            guide = Guide()
+            guide.loop()
+            if guide : del guide
+            guide = None
+            menu.running = True
         if menu.running == False :
             gui.running = True
             gui.loop()

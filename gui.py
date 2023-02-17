@@ -112,6 +112,7 @@ class GUI:
         while self.__running:
             for e in pygame.event.get():
                 if e.type == pygame.QUIT:
+                    self.save()
                     pygame.quit()
                     sys.exit()
                 elif e.type == pygame.MOUSEBUTTONDOWN:

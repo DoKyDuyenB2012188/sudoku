@@ -13,9 +13,6 @@ class Generator:
         "inhuman":      17,
         }
         self.__listNum = [1,2,3,4,5,6,7,8,9]
-    @property
-    def grid(self)->list:
-         return self.__grid
     def fillGrid(self, grid):
         pos = self.__solver.nextpos(grid)
         shuffle(self.__listNum)

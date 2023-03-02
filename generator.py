@@ -21,7 +21,7 @@ class Generator:
         for n in self.__listNum:
              if not self.__solver.exists(grid, n, pos):
                 grid[pos[0]][pos[1]] = n
-                if self.__solver.solve(grid):
+                if self.fillGrid(grid):
                     return True
                 grid[pos[0]][pos[1]] = 0
         return False
@@ -29,12 +29,11 @@ class Generator:
     def generate(self, difficulty):
         grid = [[0 for r in range(9)] for c in range(9)]
         self.fillGrid(grid)
-        difficulty = self.__DIFFICULTY.get(difficulty)
-        for i in range(0, 81 - difficulty):
-                col = randint(0,8)
+        for i in range(0, 81 - int(self.__DIFFICULTY[difficulty])):
+            row = randint(0,8)
+            col = randint(0,8)
+            while grid[row][col]==0:
                 row = randint(0,8)
-                while grid[col][row] == 0:
-                        col = randint(0,8)
-                        row = randint(0,8)
-                grid[col][row] = 0
+                col = randint(0,8)
+            grid[row][col]=0
         return grid

@@ -31,7 +31,7 @@ class Menu:
         self.guide = False
         self.quit = False
     def draw_warning_continue(self):
-         font = pygame.font.Font("C:/Users/Admin/Desktop/sudoku-master/assets/Rubik-font/Rubik-Regular.ttf", 24)
+         font = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Regular.ttf", 24)
          text = font.render("You dont have data!", True, "white")
          text_rect = text.get_rect(center=(130, 500))
          self.__screen.blit(text, text_rect)

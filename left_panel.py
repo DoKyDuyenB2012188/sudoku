@@ -100,7 +100,7 @@ class Options(GUIBase):
             Button(*i, (44*2,44), self.screen)
             for i in (
                 (self.start, (), (-2, 0.7), "auto", 24, (20,100 + 44*1)),
-                (self.solve_all, (), (-2, 0.7), "past", 24, (20+44*2+10,100 + 44*1)),
+                (self.solve_all, (), (1, 0.7), "fast", 24, (20+44*2+10,100 + 44*1)),
                 (self.kill, (), (-2, 0.7), "stop", 24, (20,100 + 44*2+10)),
                 (self.solve_selected, (), (-17, 3), "selected", 20, (20+44*2+10,100 + 44*2+10)),
                 (self.reset, (), (-6, 0.7), "reset", 24, (20,100+44*4 + 10)),

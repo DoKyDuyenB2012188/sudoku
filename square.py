@@ -93,7 +93,7 @@ class Squares(GUIBase):
         if self.__is_same_num:
             pygame.draw.rect(self.screen, (186, 76, 201), ((r, c), (space, space)))
         if self.__value != 0:
-            font = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Roboto-Bold.ttf", 30)
+            font = pygame.font.Font("./Roboto-Bold.ttf", 30)
             rgb = (0, 0, 0) if not self.__wrong else (234, 72, 54)
             v = font.render(str(self.__value), 1, rgb)
             self.screen.blit(
@@ -104,7 +104,7 @@ class Squares(GUIBase):
                 )
             )
         elif self.__pencil != 0:
-            font = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Roboto-Bold.ttf", 20)
+            font = pygame.font.Font("./Roboto-Bold.ttf", 20)
             v = font.render(str(self.__pencil), 1, (0, 0, 0))
             self.screen.blit(
                 v,

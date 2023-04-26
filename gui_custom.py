@@ -11,9 +11,9 @@ class Custom:
         self.__board_model = Board((400,400), self.__board, self.__screen)
         self.__right_panel = RightPanel((400, 400), self.__screen)
         self.__play = Button(screen=self.__screen, pos=(100, 200),
-                                 text_input="Play", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
+                                 text_input="Play", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
         self.__menu = Button(screen=self.__screen, pos=(100, 300),
-                                 text_input="Menu", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
+                                 text_input="Menu", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
         self.state = ""
         pygame.display.set_caption("Sudoku")
     def __del__(self):

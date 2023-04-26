@@ -18,12 +18,12 @@ class Guide:
             self.__screen.blit(bg, (0, 0))
             # create object button
             MENU_BUTTON = Button(screen=self.__screen, pos=(425, 600-50),
-                                     text_input="Menu", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
+                                     text_input="Menu", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
             #set title game
-            font = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Medium.ttf", 17)
-            font_title = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 24)
-            font_intro_title = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 17)
-            font_intro = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Medium.ttf", 17)
+            font = pygame.font.Font("./Rubik-Medium.ttf", 17)
+            font_title = pygame.font.Font("./Rubik-Bold.ttf", 24)
+            font_intro_title = pygame.font.Font("./Rubik-Bold.ttf", 17)
+            font_intro = pygame.font.Font("./Rubik-Medium.ttf", 17)
             #How to Play Sudoku
             line_title_1 = font_title.render("How to Play Sudoku", True, "#ffffff")
             line1 = font.render("In Sudoku, you must complete the grid so each row, column and 3-by-3 box (in bold borders)", True, "#ffffff")

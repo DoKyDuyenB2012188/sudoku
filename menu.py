@@ -31,7 +31,7 @@ class Menu:
         self.guide = False
         self.quit = False
     def draw_warning_continue(self):
-         font = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Regular.ttf", 24)
+         font = pygame.font.Font("./Rubik-Regular.ttf", 24)
          text = font.render("You dont have data!", True, "white")
          text_rect = text.get_rect(center=(130, 500))
          self.__screen.blit(text, text_rect)
@@ -46,30 +46,30 @@ class Menu:
             self.__screen.blit(bg, (0, 0))
             # create object button
             EASY_BUTTON = Button(screen=self.__screen, pos=(425, 200 - 30),
-                                 text_input="Easy", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
+                                 text_input="Easy", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
             MEDIUM_BUTTON = Button(screen=self.__screen, pos=(425, 250 - 30),
-                                   text_input="Medium", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(150, 40))
+                                   text_input="Medium", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(150, 40))
 
             HARD_BUTTON = Button(screen=self.__screen, pos=(425, 300 - 30),
-                                 text_input="Hard", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
+                                 text_input="Hard", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
 
             VERY_HARD_BUTTON = Button(screen=self.__screen, pos=(425, 350 - 30),
-                                      text_input="Verry Hard", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(200, 40))
+                                      text_input="Verry Hard", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(200, 40))
             INSANE_BUTTON = Button(screen=self.__screen, pos=(425, 400 - 30),
-                                   text_input="Insane", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(150, 40))
+                                   text_input="Insane", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(150, 40))
             CUSTOM_BUTTON = Button(screen=self.__screen, pos=(425, 450 - 30),
-                                   text_input="Custom", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(150, 40))
+                                   text_input="Custom", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(150, 40))
 
             CONTINUE_BUTTON = Button(screen=self.__screen, pos=(100, 600 - 50),
-                                     text_input="Continue", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(170, 40))
+                                     text_input="Continue", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(170, 40))
             GUIDE_BUTTON = Button(screen=self.__screen, pos=(300-20, 600 - 50),
-                                  text_input="Guide", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(120, 40))
+                                  text_input="Guide", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(120, 40))
 
             QUIT_BUTTON = Button(screen=self.__screen, pos=(780, 600 - 50),
-                                 text_input="Quit", font=pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
+                                 text_input="Quit", font=pygame.font.Font("./Rubik-Bold.ttf", 28), base_color="#ffffff", hovering_color="#f780bf", size=(100, 40))
             
             #set title game
-            font = pygame.font.Font(r"C:\Users\Admin\Desktop\my_Sudoku\Rubik-Bold.ttf", 40)
+            font = pygame.font.Font("./Rubik-Bold.ttf", 40)
             text = font.render("SUDOKU", True, "#ffffff")
             text_rect = text.get_rect(center=(425, 100))
             self.__screen.blit(text,text_rect)

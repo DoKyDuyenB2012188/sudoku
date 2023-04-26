@@ -10,7 +10,6 @@ class Solver:
         self.__e = threading.Event()
         self.__kill = False
         self.__e.set()
-        self.counter = 0
 
     @property
     def delay(self) -> float:
@@ -80,7 +79,6 @@ class Solver:
         pos = self.nextpos(board)
         # solved -edge
         if not pos:
-            self.counter+=1
             return True
         # itertate over all possible numbers(0-9)
         for n in range(1, 10):

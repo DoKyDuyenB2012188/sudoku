@@ -147,6 +147,7 @@ class Options(GUIBase):
     def reset(self) -> bool:
         """Reset board"""
         # iterate over all squares
+        self.kill()
         for r in range(9):
             for c in range(9):
                 # check for changeable squares
